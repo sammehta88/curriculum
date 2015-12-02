@@ -214,7 +214,7 @@ Q. In which file should this `Artist.fetch` method go?
 Add this:
 
 ```js
-Artist.all = []
+Artist.all = [];
 Artist.fetch = function(){
   var url = "http://localhost:3000/artists";
   var request = $.getJSON(url).then(function(response){
